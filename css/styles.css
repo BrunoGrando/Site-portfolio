@@ -1,3 +1,11 @@
+:root{
+    --corbg: #423e50;
+    --corshadow: #26F3E9;
+    --cortextbtn: #26f3e9b2;
+    --cortextbtndes: #26f3e944;
+    --cornavbar: #212529;
+
+}
 *{
     border: 0;
     outline: 0;
@@ -11,17 +19,44 @@
     font-size: 100%;
 }
 body{
-    background-color: #423e50;
+    background-color:var(--corbg);
 }
 #navbar{
-    border-bottom: 1px solid steelblue;
-    box-shadow: 0px -20px 100px 25px #26F3E9;
+    border-bottom: 1px solid var(--cortextbtn);
+    box-shadow: 0px -20px 100px 25px var(--corshadow);
+}
+.navbar-brand{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-right:100px;
+}
+.nav-item{
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-item .active{
+    color: var(--cortextbtn);
+}
+.navbar-dark .navbar-nav .nav-item:hover{
+    border-radius: 10px;
+    background-color: var(--cortextbtn);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-item .active:hover{
+    color:var(--cornavbar) ;
+}
+
+.nav-item:hover{
+    transition: .5s ease-in-out;
+    border: 1px solid var(--cortextbtn);
+    box-shadow:  2px 2px 10px 0px var(--cortextbtndes);
+    
 }
 .btn{
-    color: #26f3e9b2;
-    border-color: #26f3e9b2;
+    color: var(--cortextbtn);
+    border-color: var(--cortextbtn);
 }
 .btn:hover{
-    background-color: #26f3e9b2;
-    color: #212529;
+    background-color: var(--cortextbtn);
+    color: var(--cornavbar);
 }
