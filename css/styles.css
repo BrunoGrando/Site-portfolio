@@ -1,0 +1,27 @@
+*{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+body{
+    background-color: #423e50;
+}
+#navbar{
+    border-bottom: 1px solid steelblue;
+    box-shadow: 0px -20px 100px 25px #26F3E9;
+}
+.btn{
+    color: #26f3e9b2;
+    border-color: #26f3e9b2;
+}
+.btn:hover{
+    background-color: #26f3e9b2;
+    color: #212529;
+}
